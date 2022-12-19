@@ -72,6 +72,10 @@ public class MainController {
 
         try {
             emailSender.sendEmail(email.get("email"), group);
+
+            group.addMember();
+            holidayGroupService.update(group);
+
         } catch (MailSendException e) {
             e.printStackTrace();
             return ResponseEntity.internalServerError().build();

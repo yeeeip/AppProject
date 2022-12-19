@@ -14,7 +14,11 @@ public class HolidayGroup {
 
     private String city;
     private Integer participantsMax;
+
+    private Integer participantsCur;
     private String location;
+
+
     private boolean alcoholAllowed;
     private boolean cigarettesAllowed;
 
@@ -29,7 +33,7 @@ public class HolidayGroup {
         this.title = title;
         this.description = description;
         this.city = city;
-        this.participantsMax = participantsMax;
+        this.participantsMax = 0;
         this.location = location;
         this.alcoholAllowed = alcoholAllowed;
         this.cigarettesAllowed = cigarettesAllowed;
@@ -40,6 +44,7 @@ public class HolidayGroup {
         this.description = description;
         this.city = city;
         this.participantsMax = participantsMax;
+        this.participantsCur = 0;
         this.location = location;
         this.alcoholAllowed = alcoholAllowed;
         this.cigarettesAllowed = cigarettesAllowed;
@@ -54,6 +59,32 @@ public class HolidayGroup {
         this.alcoholAllowed = alcoholAllowed;
         this.cigarettesAllowed = cigarettesAllowed;
         this.photo = photo;
+    }
+
+    public HolidayGroup(String title, String description, String city, Integer participantsMax, Integer participantsCur, String location, boolean alcoholAllowed, boolean cigarettesAllowed) {
+        this.title = title;
+        this.description = description;
+        this.city = city;
+        this.participantsMax = participantsMax;
+        this.participantsCur = participantsCur;
+        this.location = location;
+        this.alcoholAllowed = alcoholAllowed;
+        this.cigarettesAllowed = cigarettesAllowed;
+    }
+
+    public Integer getParticipantsCur() {
+        return participantsCur;
+    }
+
+    public void setParticipantsCur(Integer participantsCur) {
+        this.participantsCur = participantsCur;
+    }
+
+    public void addMember() {
+        if (participantsCur >= participantsMax) {
+            return;
+        }
+        participantsCur++;
     }
 
     public byte[] getPhoto() {

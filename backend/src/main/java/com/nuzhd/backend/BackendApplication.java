@@ -30,7 +30,7 @@ public class BackendApplication {
             repository.save(new HolidayGroup("Группа 7","Описание 7", "Владимир",17,"Озерная ул., д. 17 кв.150",true,false));
             repository.save(new HolidayGroup("Группа 8","Описание 8", "Дзержинск",20,"Полевая ул., д. 25 кв.123",false,false));
             repository.save(new HolidayGroup("Группа 9","Описание 9", "Москва",5,"Трудовая ул., д. 19 кв.164",true,true));
-            repository.save(new HolidayGroup("Группа 10","Описание 10", "Сочи",3,"Радужная ул., д. 4 кв.97",false,false));
+            repository.save(new HolidayGroup("Группа 10","Описание 10", "Сочи",10,9,"Радужная ул., д. 4 кв.97",false,false));
             repository.save(new HolidayGroup("Группа 11","Описание 11", "Тула",6,"Солнечная ул., д. 23 кв.186",false,false));
             repository.save(new HolidayGroup("Группа 12","Описание 12", "Магнитогорск",9,"Железнодорожная ул., д. 10 кв.128",true,false));
             repository.save(new HolidayGroup("Группа 13","Описание 13", "Альметьевск",11,"Школьная ул., д. 9 кв.97",false,false));
