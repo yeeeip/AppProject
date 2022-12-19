@@ -29,7 +29,7 @@ public class MainController {
         return "pong";
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001"})
     @PostMapping
     public ResponseEntity<HolidayGroup> createGroup(@RequestBody HolidayGroup group) {
         HolidayGroup createdGroup = holidayGroupService.create(group);
@@ -60,7 +60,7 @@ public class MainController {
         return ResponseEntity.ok(groups);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = {"http://localhost:3000","http://localhost:3001"})
     @PostMapping(value = "/{id}/join")
     public ResponseEntity<String> sendEmailOnJoin(@PathVariable("id") Long groupId, @RequestBody HashMap<String, String> email) {
 

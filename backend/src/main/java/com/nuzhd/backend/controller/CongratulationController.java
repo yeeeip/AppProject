@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.ExecutionException;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/v1/congratulation")
 public class CongratulationController {
 
@@ -19,7 +20,7 @@ public class CongratulationController {
         this.congratulationService = congratulationService;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = {"http://localhost:3000","http://localhost:3001"})
     @GetMapping
     public ResponseEntity<String> getCongratulation() {
 
