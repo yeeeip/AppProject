@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #054752;
+}
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+/* BUTTON */
+.btn {
+    background: #00aff5;
+    height: 3em;
+    border-radius: 1.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.5em;
+    transition: all 300ms ease;
+}
+.btn:hover {
+    transform: scale(1.03);
+    background: #008fc1;
+    color: white;
+}
+.btn:active {
+    transform: scale(0.95);
+    background-color: #008fc1 !important;
+    border: none;
+    color: white !important;
+}
+.btn:disabled {
+    color: #00aff5;
+    border: 1px solid #00aff5;
+}
+.development {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: wheat;
+    font-weight: bold;
+}

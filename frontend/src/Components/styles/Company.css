@@ -1,0 +1,16 @@
+.search__company {
+    padding: 1em;
+    border: 1px dotted #000;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+.alert-dialog-title {
+    color: #054752;
+}

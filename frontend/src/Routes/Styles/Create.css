@@ -1,0 +1,20 @@
+.create {
+    max-width: 1500px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+.create > div {
+    background: #fff;
+    border-radius: 1em;
+    padding: 1.5em;
+    color: #708c91;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25em;
+    box-shadow: 0 0 20px -7px #00b8ff;
+}
+.create h5,
+.create h3 {
+    color: #054752;
+}

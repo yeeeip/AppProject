@@ -1,0 +1,71 @@
+.search {
+    display: flex;
+    gap: 1em;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3em;
+}
+.search > div {
+    background: #fff;
+    border-radius: 1em;
+    padding: 1.5em;
+    color: #708c91;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.25em;
+    box-shadow: 0 0 20px -5px #00b8ff;
+}
+.search__sidebar {
+    flex: 0 0 30%;
+    min-width: 20px;
+    align-self: start;
+}
+.search__sidebar h5 {
+    color: #054752;
+}
+.search__main {
+    flex: 1 1 auto;
+    align-self: start;
+}
+.input-group button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 100%;
+}
+.search__cigAndAlco {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.span-star {
+    color: red;
+}
+#alert-dialog-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#alert-dialog-description strong {
+    margin-bottom: 0.7em;
+}
+.search__maxHuman {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+    justify-content: space-between;
+}
+.search__maxHuman input {
+    flex-grow: 1;
+}
+.full-company {
+    font-size: 1.2em;
+    color: red;
+    border: 1px solid red;
+    padding: 0.5em;
+    text-align: center;
+    background: red;
+    border-radius: 0.7em;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
